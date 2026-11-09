@@ -150,6 +150,21 @@ A: 请先确认已执行 `cd example/cpp/hello_world && mkdir -p build && cd bui
 - 提交前运行单元测试
 
 ## Changelog
+### [1.1.1] - 2026-11-09
+#### Added
+- 补充数据分片相关宏定义
+- 增加 cdr/xml/log/security/xtypes 五个模块的单元测试用例
+#### Fixed
+- 优化 SPDP 周期
+- 修复分片数据与 Fast DDS 互通问题
+- 修复单元测试用例及脚本问题
+- 修复 socket IP_TOS 设置优先级过滤问题
+- 修复用户组播赋值错误问题
+#### Changed
+- 修改分区（Partition）通配符和正则表达式逻辑，符合规范
+- 核心库测试覆盖率整改
+- SequenceNumber_t 去聚合
+
 ### [1.1.0] - 2026-06-25
 #### Added
 - 添加 Sample Identity (Extension for RPC)
